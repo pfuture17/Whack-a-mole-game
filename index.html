@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack A Mole</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="start">
+            <h1>Whack a Mole!</h1>
+            <div class="text">
+                <div class="scoreboard">
+                    <h2>Your Score: </h2>
+                    <h2 id='score'>0</h2>
+                    
+                    <h2>Highscore: </h2>
+                    <h2 id="highScore">0</h2>
+                </div>
+                <div class="time">
+                    <h2>Seconds left: </h2>
+                    <h2 id='time-left'>30</h2>
+                </div>
+            </div>
+            <div class="mainGame">
+                <div class="tutorial">
+                    <h2>How to Play</h2>
+                    <p>use your mouse to click on the mole and activate the hammer.
+                    This is a timed game. You have 30 seconds to whack as many moles as you can. The timer in the upper left of the game shows how many seconds remain.</p>
+                </div>
+                <div class="grid">
+                    <div class="square" id='1'></div>
+                    <div class="square" id='2'></div>
+                    <div class="square" id='3'></div>
+                    <div class="square" id='4'></div>
+                    <div class="square" id='5'></div>
+                    <div class="square" id='6'></div>
+                    <div class="square" id='7'></div>
+                    <div class="square" id='8'></div>
+                    <div class="square" id='9'></div>
+                </div>
+                <div class="buttons">
+                    <button id='startBtn'><p>start game</p></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='game.js' charset='utf-8'></script>
+</html>
